@@ -1,4 +1,5 @@
-#<h4>MYSQL Installation:
+#MYSQL Installation:
+
 
 1.Check version linux version:
   - command : lsb_release -a
@@ -7,7 +8,7 @@
 
 2.Go to <http://dev.mysql.com/downloads/repo/yum/>
   - Find the community server GA, based on your linux version.
-  - example : Red Hat Enterprise Linux Server release 6.5
+  - *example* : Red Hat Enterprise Linux Server release 6.5
   - (sample): download Red Hat Enterprise Linux 6/ Oracle Linux 6(Architecture Independent), RPM Package.
   - command  : wget http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm. 
 
