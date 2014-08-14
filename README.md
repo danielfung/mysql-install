@@ -1,4 +1,4 @@
-<h4>MYSQL Installation:
+#<h4>MYSQL Installation:
 
 1.Check version linux version:
   - command : lsb_release -a
@@ -51,4 +51,5 @@
   - mysql command : GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 
 9.Make changes to my.cnf:
-  - 
+  - Depending on server resources avaliable you will want to adjust **innodb_buffer_pool_size** and **key_buffer_size**.
+  - MYSQL recommends the key_buffer_size be **<25%** of physical ram, while innodb_buffer_pool_size be **70-80%** of ram.
