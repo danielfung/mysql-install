@@ -1,4 +1,4 @@
-MYSQL Installation:
+<h4>MYSQL Installation:
 
 1)Check version linux version:
   - command : lsb_release -a
@@ -31,7 +31,7 @@ MYSQL Installation:
 7)Change default data directory:
   - 7a) STOP MYSQL SERVICE
   - **NOTE**    : Before making changes, stop mysql service
-        - command : sudo service mysqld stop
+  - command : sudo service mysqld stop
   - 7b) Change data directory
   - NOTE: default mysql data directory /var/lib/mysql
   - command : sudo cp - rap /var/lib/mysql /nfsshare/mysql
