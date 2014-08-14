@@ -19,18 +19,18 @@ MYSQL Installation:
   - output  : Starting mysqld:[ OK ]
 
 5)Securing mysql installation:
-  - NOTE    : default password for root: (blank/nothing) - just hit enter
+  - **NOTE**    : default password for root: (blank/nothing) - just hit enter
   - command : mysql_secure_installation
   - output  : Follow instructions to set up mysql server
 
 6)Find my.cnf:
-  - NOTE    : default configration file etc/my.cnf
+  - **NOTE**    : default configration file etc/my.cnf
   - command : whereis my.cnf
   - output  : location of my.cnf
 
 7)Change default data directory:
   - 7a) STOP MYSQL SERVICE
-  - NOTE    : Before making changes, stop mysql service
+  - **NOTE**    : Before making changes, stop mysql service
   - command : sudo service mysqld stop
   - 7b) Change data directory
   - NOTE: default mysql data directory /var/lib/mysql
@@ -44,7 +44,7 @@ MYSQL Installation:
   - Change to:socket = nfsshare/mysql/mysql.sock(under client)
 
 8)Set up users in mysql:
-  - NOTE: Must be in mysql(ex: mysql> .....)
+  - **NOTE**: Must be in mysql(ex: mysql> .....)
   - To create a user:
   - mysql command : CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
   - To add permissions to the user: (ex: DBA)
