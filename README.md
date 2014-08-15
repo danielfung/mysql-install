@@ -39,9 +39,9 @@
   - output  : copy default mysql data directory to other location(/nfsshare/mysql)
   - 7c. Set the required mysql ownership on new directory
   - $ chown mysql.mysql /nfsshare/mysql
-  - 7d. Update my.cnf values datadir and socket variable**(under [mysqld] & [client])**
-  - Change From: datadir = /var/lib/mysql , socket=/var/lib/mysql/mysql.sock**(under [mysqld] & [client])**
-  - Change to: datadir = /nfsshare/mysql , socket = nfsshare/mysql/mysql.sock**(under [mysqld])**
+  - 7d. Update my.cnf values datadir and socket variable **(under [mysqld] & [client])**
+  - Change From: datadir = /var/lib/mysql , socket=/var/lib/mysql/mysql.sock **(under [mysqld] & [client])**
+  - Change to: datadir = /nfsshare/mysql , socket = nfsshare/mysql/mysql.sock **(under [mysqld])**
   - Change to:socket = nfsshare/mysql/mysql.sock(under client)
 
 8. Set up users in mysql:
