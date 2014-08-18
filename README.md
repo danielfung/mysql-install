@@ -11,6 +11,7 @@
   - *example* : Red Hat Enterprise Linux Server release 6.5
   - (sample): download Red Hat Enterprise Linux 6/ Oracle Linux 6(Architecture Independent), RPM Package.
   - $ wget http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm. 
+  - $ sudo yum localinstall mysql-community-release-el6-5.noarch.rpm
 
 3. Install mysql with Yum:
   - $ sudo yum install mysql-community-server
