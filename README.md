@@ -57,4 +57,5 @@
 10. Make changes to my.cnf:
   - Depending on server resources avaliable you will want to adjust **innodb_buffer_pool_size** and **key_buffer_size**.
   - MYSQL recommends the key_buffer_size be **<25%** of physical ram, while innodb_buffer_pool_size be **70-80%** of physical ram.
-  - innodb_log_file_size: 
+  - innodb_log_file_size is important for write intensive workload(large data sets). Larger size offers better performance but increase recovery time.
+  - 
