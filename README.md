@@ -33,7 +33,7 @@
  ```
 
 6. Securing mysql installation:
-  - **NOTE**    : default password for root: (blank/nothing) - just hit enter
+  * **NOTE**    : default password for root: (blank/nothing) - just hit enter
  ```
     $ mysql_secure_installation
     output  : Follow instructions to set up mysql server
@@ -51,12 +51,13 @@
   - **NOTE**    : Before making changes, stop mysql service
  ```
      $ sudo service mysqld stop
+     output  : Starting mysqld:[ OK ]
  ```
   - 7b. Change data directory
-  - NOTE: default mysql data directory /var/lib/mysql
+  - **NOTE**: default mysql data directory /var/lib/mysql
  ```
      $ sudo cp - rap /var/lib/mysql /nfsshare/mysql
-     output  : copy default mysql data directory to other location(/nfsshare/mysql)
+     output  : copy default mysql data directory to other location(example: /nfsshare/mysql)
  ```
   - 7c. Set the required mysql ownership on new directory
  ```
