@@ -48,7 +48,7 @@
   - Change to:socket = nfsshare/mysql/mysql.sock(under client)
 
 9. Set up users in mysql:
-  - **NOTE**: Must be in mysql(ex: mysql> .....)
+  - **NOTE**: Must be in mysql(replace **newuser** with username, **password** with a password for this user)
   - To create a user:
   - mysql> CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
   - To add permissions to the user: (ex: DBA)
@@ -58,3 +58,9 @@
   - Depending on server resources avaliable you will want to adjust **innodb_buffer_pool_size** and **key_buffer_size**.
   - MYSQL recommends the key_buffer_size be **<25%** of physical ram, while innodb_buffer_pool_size be **70-80%** of physical ram.
   - innodb_log_file_size is important for write intensive workload(large data sets). Larger size offers better performance but increase recovery time.
+
+11. To install additional MySQL products and components:
+  - 11a.List packages for MySQL components avaliable for your platform from MYSQL Yum repository
+  - $sudo yum --disablerepo=\* --enablerepo='mysql*-community*' list available
+  - 11b.Install package of your choice with follow command(replace **package-name** with name of package
+  - $sudo yum install package-name(**example**: $sudo yum install mysql-community-devel.x86_64)
