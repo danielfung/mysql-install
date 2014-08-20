@@ -1,4 +1,4 @@
-#MYSQL Installation:
+#MYSQL Installation(RHEL):
 
 
 1. Check version linux version:
