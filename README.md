@@ -40,10 +40,10 @@
  ```
 
 7. Find my.cnf:
-  - **NOTE**    : default configration file etc/my.cnf
+  - **NOTE**    : default configration file location: etc/my.cnf
  ```
     $ whereis my.cnf
-    output  : location of my.cnf
+    output  : location of my.cnf(example: etc/my.cnf)
  ```
 
 8. Change default data directory:
