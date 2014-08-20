@@ -6,7 +6,7 @@
   - output  : Description:Red Hat Enterprise Linux Server release 6.5
   - (sample): Release    : 6.5
 
-2. Go to <http://dev.mysql.com/downloads/repo/yum/>
+2. Go to this [link](http://dev.mysql.com/downloads/repo/yum/)
   - Find the community server GA, based on your linux version.
   - *example* : Red Hat Enterprise Linux Server release 6.5
   - (sample): download Red Hat Enterprise Linux 6/ Oracle Linux 6(Architecture Independent), RPM Package.
