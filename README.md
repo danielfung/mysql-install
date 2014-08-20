@@ -29,7 +29,6 @@
 5. Start mysql server:
  ```
     $ sudo service mysqld start
-
     output  : Starting mysqld:[ OK ]
  ```
 
@@ -37,7 +36,6 @@
   - **NOTE**    : default password for root: (blank/nothing) - just hit enter
  ```
     $ mysql_secure_installation
-
     output  : Follow instructions to set up mysql server
  ```
 
@@ -45,7 +43,6 @@
   - **NOTE**    : default configration file etc/my.cnf
  ```
     $ whereis my.cnf
-
     output  : location of my.cnf
  ```
 
@@ -59,7 +56,6 @@
   - NOTE: default mysql data directory /var/lib/mysql
  ```
      $ sudo cp - rap /var/lib/mysql /nfsshare/mysql
-
      output  : copy default mysql data directory to other location(/nfsshare/mysql)
  ```
   - 7c. Set the required mysql ownership on new directory
@@ -90,9 +86,9 @@
 11. To install additional MySQL products and components:
   - 11a.List packages for MySQL components avaliable for your platform from MYSQL Yum repository
  ```
-  $sudo yum --disablerepo=\* --enablerepo='mysql*-community*' list available
+    $sudo yum --disablerepo=\* --enablerepo='mysql*-community*' list available
  ```
   - 11b.Install package of your choice with follow command(replace **package-name** with name of package
  ```
-  $sudo yum install package-name(**example**: $sudo yum install mysql-community-devel.x86_64)
+    $sudo yum install package-name(**example**: $sudo yum install mysql-community-devel.x86_64)
  ```
