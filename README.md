@@ -2,9 +2,11 @@
 
 
 1. Check version linux version:
-  - $ lsb_release -a
-  - output  : Description:Red Hat Enterprise Linux Server release 6.5
-  - (sample): Release    : 6.5
+ ```
+    $ lsb_release -a
+    output  : Description:Red Hat Enterprise Linux Server release 6.5
+    (sample): Release    : 6.5
+ ```
 
 2. Go to this [link](http://dev.mysql.com/downloads/repo/yum/)
   - Find the community server GA, based on your linux version.
@@ -57,8 +59,9 @@
   - NOTE: default mysql data directory /var/lib/mysql
  ```
      $ sudo cp - rap /var/lib/mysql /nfsshare/mysql
+
+     output  : copy default mysql data directory to other location(/nfsshare/mysql)
  ```
-  - output  : copy default mysql data directory to other location(/nfsshare/mysql)
   - 7c. Set the required mysql ownership on new directory
  ```
      $ chown mysql.mysql /nfsshare/mysql
