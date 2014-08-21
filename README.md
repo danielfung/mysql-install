@@ -56,7 +56,7 @@
   - 7b. Change data directory
   - **NOTE**: default mysql data directory /var/lib/mysql
  ```
-     $ sudo cp - rap /var/lib/mysql /nfsshare/mysql
+     $ sudo cp -rap /var/lib/mysql /nfsshare/mysql
      output  : copy default mysql data directory to other location(example: /nfsshare/mysql)
  ```
   - 7c. Set the required mysql ownership on new directory
