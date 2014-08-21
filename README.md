@@ -33,7 +33,7 @@
  ```
 
 6. Securing mysql installation:
-  * **NOTE**    : default password for root: (blank/nothing) - just hit enter
+  - **NOTE**    : default password for root: (blank/nothing) - just hit enter
  ```
     $ mysql_secure_installation
     output  : Follow instructions to set up mysql server
